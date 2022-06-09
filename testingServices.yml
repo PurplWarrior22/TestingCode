@@ -1,0 +1,12 @@
+version: "2.4"
+services:
+  madden:
+    build: 
+      context: ./madden
+    volumes:
+      - ${DATA_HOST_VOLUME}:/data
+    environment:
+        ELASTICSEARCH_URL: ${ELASTICSEARCH_URL}
+        ELASTICSEARCH_INDEX: ${ELASTICSEARCH_INDEX}
+    ports:
+      - ${SEARCH_HOST_PORT}:8080

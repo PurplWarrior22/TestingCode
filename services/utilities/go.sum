@@ -1,0 +1,4 @@
+github.com/PurplWarrior22/TestingCode/services/models v0.0.0-20220120235030-f967f6b68187/go.mod h1:qSK5grwJZKINZNky0lwYZML605xDmrAn1rKB2a7U1Mc=
+github.com/PurplWarrior22/TestingCode/services/models v0.0.0-20220529142624-60b3349973d5 h1:liStbuH6SmdJtzrE96UcBuf0b++8Njunk68jN4MyCpY=
+github.com/PurplWarrior22/TestingCode/services/models v0.0.0-20220529142624-60b3349973d5/go.mod h1:UBD+nikgwkrwwon368RHwg0xXKOu8/0chNWvoBxIRbA=
+github.com/PurplWarrior22/TestingCode/services/utilities v0.0.0-20220518205610-7768d9eea1e8/go.mod h1:Gx82SPcf7nybSzKK8+vL8/qKD4tAejx2VCIko0OAqWQ=

@@ -1,12 +1,30 @@
 version: "2.4"
 services:
-  madden:
-    build: 
-      context: ./madden
-    volumes:
-      - ${DATA_HOST_VOLUME}:/data
+  postgres:
+    hostname: postgres
+    image: postgres:14
     environment:
-        ELASTICSEARCH_URL: ${ELASTICSEARCH_URL}
-        ELASTICSEARCH_INDEX: ${ELASTICSEARCH_INDEX}
+      POSTGRES_PASSWORD: development
+      POSTGRES_USER: developer
+      POSTGRES_DB: madden
     ports:
-      - ${SEARCH_HOST_PORT}:8080
+      - 9876:5432
+
+  madden:
+    hostname: madden
+    build:
+      context: ./services/madden
+      args:
+        USER: ${OTH_USER}
+        PASS: ${OTH_PASS}
+    environment:
+      DB_USERNAME: developer
+      DB_PASSWORD: development
+      DB_HOST: postgres
+      DB_PORT: 5432
+      IMAGE_PATH: http://localhost:4445/image/
+    ports:
+      - 4444:8080
+    restart: unless-stopped
+    depends_on:
+      - postgres

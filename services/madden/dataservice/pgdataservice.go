@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"time"
 
-	"../services/madden/swagger"
-	"../services/maddendb"
-	"../services/models"
-	"../services/utilities"
+	"github.com/PurplWarrior22/TestingCode/services/madden/swagger"
+	"github.com/PurplWarrior22/TestingCode/services/maddendb"
+	"github.com/PurplWarrior22/TestingCode/services/models"
+	"github.com/PurplWarrior22/TestingCode/services/utilities"
 	"gorm.io/gorm"
 )
 

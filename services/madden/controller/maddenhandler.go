@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"../services/madden/dataservice"
-	"../services/madden/swagger"
-	"../services/maddendb"
+	"github.com/PurplWarrior22/TestingCode/services/madden/dataservice"
+	"github.com/PurplWarrior22/TestingCode/services/madden/swagger"
+	"github.com/PurplWarrior22/TestingCode/services/maddendb"
 )
 
 type maddenHandler struct {

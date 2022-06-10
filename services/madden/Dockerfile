@@ -4,8 +4,8 @@ ARG USER=user
 ARG PASS=pass
 
 RUN apk add build-base git
-ENV GOPRIVATE=bitbucket.di2e.net
-RUN printf "machine bitbucket.di2e.net\n\
+ENV GOPRIVATE=github.com
+RUN printf "machine github.com\n\
     login ${USER}\n\
     password ${PASS}\n\
     \n"\
